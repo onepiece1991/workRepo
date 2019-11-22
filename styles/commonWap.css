@@ -1,0 +1,233 @@
+@charset "utf-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+button, input, textarea,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 26.6666666666666667vw;
+  -ms-text-size-adjust: 100%;
+  /*防止iPhone在坚屏转向横屏时放大文字*/
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font: .16rem/1.5 "PingFang SC", "Microsoft YaHei", SimSun, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #666;
+  /*字体抗锯齿*/
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
+}
+
+button,
+input,
+textarea,
+select,
+optgroup,
+option {
+  font: 100%/1 "PingFang SC", "Microsoft YaHei", SimSun, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  outline: 0;
+}
+
+select {
+  background-color: transparent;
+}
+
+textarea {
+  /*去除右下角的三角形*/
+  resize: none;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+caption,
+code,
+th,
+optgroup {
+  font-weight: normal;
+  font-style: normal;
+}
+
+i,
+cite,
+em,
+var,
+address,
+dfn {
+  font-style: italic;
+}
+
+b,
+strong {
+  font-weight: bold
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: "PingFang SC", "Microsoft YaHei", SimSun, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  _font-family: "PingFang SC", "Microsoft YaHei", SimSun, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1em
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word
+}
+
+small {
+  font-size: 80%;
+}
+
+sup,
+sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em
+}
+
+sub {
+  bottom: -0.25em
+}
+
+abbr[title],
+acronym[title] {
+  text-decoration: none;
+  border-bottom: 1px dotted;
+}
+
+mark {
+  background: #00A4EA;
+  color: #FFF;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: #666;
+  outline: none;
+  text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus {
+  outline: 0;
+  text-decoration: none;
+}
+
+a:active {
+  star: expression(this.onFocus=this.blur());
+}
+
+fieldset,
+img,
+a img,
+:link img,
+:visited img {
+  border: 0;
+}
+
+/*Hide audio tags without the controls attribute.*/
+audio:not([controls]) {
+  display: none;
+  height: 0
+}
+
+/*Hide the tags with the hidden attribute.*/
+[hidden] {
+  display: none
+}
+
+/*IE 9*/
+svg:not(:root) {
+  overflow: hidden;
+  _zoom: 1
+}

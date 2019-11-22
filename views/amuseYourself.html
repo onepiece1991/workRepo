@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>simulation weChat</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <link href="../styles/amuseYourself.css" rel="stylesheet">
+	</head>
+	<body>
+    <header>
+      <button class="show-name" onclick="showName()">SHOW</button>
+      <h1>群聊（<span>3</span>人）</h1>
+      <a href="javascript:void(0)" class="set" id="set" onclick="setName()">SN</a>
+      <div class="other-wrap" id="otherWrap">
+        <div class="other-main">
+          <div>
+            <label for="" class="name-label">中文:</label>
+            <input class="name-input" id="nameInputZH" value="" placeholder="请输入其他人员的名字">
+            <button class="confirm" onclick="addOtherName()">确认</button>
+            <button class="reset" onclick="resetName()">重置</button>
+          </div>
+          <div class="mt20">
+            <label for="" class="name-label">英文:</label>
+            <input class="name-input" id="nameInputEN" value="" placeholder="English name">
+            <button class="confirm" onclick="addOtherName()">确认</button>
+            <button class="reset" onclick="resetName()">重置</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- 聊天区 -->
+    <div class="main" id="main"></div>
+    <footer>
+      <button class="characters" onclick="showChars()">···</button>
+      <div class="char-box" id="charBox">
+        <ul class="char-wrap" id="charWrap">
+          <!-- <li class="char-item" onclick="chooseChar(0)">sf</li>
+          <li class="char-item" onclick="chooseChar(1)">xz</li>
+          <li class="char-item" onclick="chooseChar(2)">yb</li>
+          <li class="char-item" onclick="chooseChar(3)">dl</li> -->
+        </ul>
+      </div>
+      <div class="sim-input" id="simInput" contenteditable onblur="temporaryRepair()"></div>
+      <button class="submit" onclick="addCont()">发送</button>
+    </footer>
+    <div class="masker" onclick="hideAll()"></div>
+    <script src="../scripts/jquery.min.js"></script>
+    <script src="../scripts/amuseYourself/amuseYourself.js"></script>
+	</body>
+</html>
