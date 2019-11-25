@@ -412,3 +412,343 @@ footer {
   background-color: rgba(0,0,0,.5);
   z-index: 1;
 }
+
+@media screen and (min-width:800px) {
+  html {
+    font-size: 100%;
+  }
+  
+  body {
+    font-size: 16px;
+  }
+  
+  /* 顶部导航栏 */
+  header {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #fff;
+    z-index: 10;
+  }
+  
+  header h1 {
+    font-size: 16px;
+    line-height: 40px;
+    color: #333;
+    text-align: center;
+    font-weight: normal;
+  }
+  .show-name,
+  .set {
+    position: absolute;
+    top: 50%;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2879D9;
+    transform: translateY(-50%);
+  }
+  .show-name {
+    left: 20px;
+  }
+  .set {
+    right: 20px;
+  }
+  
+  /* 主内容栏 */
+  .main {
+    height: 100%;
+    padding: 50px 12px;
+    overflow-y: auto;
+    /* background: url(../images/amuseYourself/bg.jpg) no-repeat;
+    background-size: cover; */
+  }
+  
+  .mainBox {
+    margin-bottom: 17px;
+  }
+  
+  .nameImg {
+    float: left;
+  }
+  
+  .nameImg img {
+    display: block;
+    width: 34px;
+    height: 34px;
+    border-radius: 4px;
+  }
+  
+  .tdBox {
+    float:left;
+    width: 80%;
+    padding: 0 13px;
+  }
+  
+  .name {
+    display: none;
+    margin-bottom: 5px;
+    color: #999;
+    font-size: 15px;
+    line-height: 1;
+  }
+  
+  .content,
+  .content1 {
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid #e5e5e5;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    vertical-align: top;
+  }
+  
+  .content:before,
+  .content:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 9.5px;
+    left: -11px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-right: 6px solid #fff;
+    z-index: 1;
+  }
+  
+  .content:after {
+    left: -12px;
+    border-right: 6px solid #e5e5e5;
+    z-index: 0;
+  }
+  
+  /*本人*/
+  .mainPerson .nameImg,
+  .mainPerson .tdBox {
+    float: right;
+  }
+  
+  .mainPerson .tdBox {
+    text-align: right;
+  }
+  .mainPerson .content1 {
+    background-color: #9eea6a;
+  }
+  .mainPerson .content1:before,
+  .mainPerson .content1:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 9.5px;
+    right: -11px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-left: 6px solid #9eea6a;
+    z-index: 1;
+  }
+  
+  .mainPerson .content1:after {
+    right: -12px;
+    border-left: 6px solid #e5e5e5;
+    z-index: 0;
+  }
+  
+  /* 底部输入框 */
+  footer {
+    position: absolute;
+    display: flex;
+    display: -webkit-flex;
+    width: 100%;
+    bottom: 0;
+    padding: 10px 0;
+    background-color: #e8e3e8;
+    z-index: 10;
+  }
+  
+  .characters {
+    padding: 0 10px;
+    font-size: 24px;
+    color: #666;
+    line-height: 40px;
+    font-weight: bold;
+  }
+  
+  .sim-input {
+    flex: 1;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+    min-height: 40px;
+    word-break: break-word;
+    -webkit-user-select: text;
+  }
+  
+  .submit {
+    padding: 0 10px;
+    font-size: 16px;
+    color: #2879D9;
+    line-height: 40px;
+  }
+  /* 输入人名 */
+  .other-wrap {
+    display: none;
+    position: absolute;
+    top: 46px;
+    right: 5px;
+    height: 0;
+    background-color: #fff;
+    opacity: 0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    transition: all .3s;
+    z-index: 110;
+  }
+  .other-wrap.active {
+    display: block;
+    height: auto;
+    opacity: 1;
+  }
+  .other-main {
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid #e5e5e5;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    vertical-align: top;
+  }
+  
+  .other-main:before,
+  .other-main:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -11px;
+    right: 12px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-bottom: 6px solid #fff;
+    z-index: 1;
+  }
+  
+  .other-main:after {
+    bottom: -12px;
+    border-bottom: 6.5px solid #e5e5e5;
+    z-index: 0;
+  }
+  .name-input {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 36px;
+  }
+  .confirm,
+  .reset {
+    display: inline-block;
+    margin: 0 3px;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 36px;
+    color: #fff;
+    background-color: #2E6DA4;
+    border-radius: 5px;
+    vertical-align: top;
+  }
+  .reset {
+    background-color: #C0C0C0;
+  }
+  .mt20 {
+    margin-top: 20px;
+  }
+  /* 选择人物 */
+  .char-box {
+    display: none;
+    position: absolute;
+    top: -40px;
+    left: 5px;
+    height: 0;
+    background-color: #fff;
+    opacity: 0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    transition: all .3s;
+    z-index: 110;
+  }
+  .char-box.active {
+    display: block;
+    height: auto;
+    opacity: 1;
+  }
+  .char-wrap {
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid #e5e5e5;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    vertical-align: top;
+  }
+  
+  .char-wrap:before,
+  .char-wrap:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -11px;
+    left: 12px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-top: 6px solid #fff;
+    z-index: 1;
+  }
+  
+  .char-wrap:after {
+    bottom: -12px;
+    left: 12px;
+    border-top: 6.5px solid #e5e5e5;
+    z-index: 0;
+  }
+  
+  .char-item {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0 10px;
+    font-size: 16px;
+    color: #fff;
+    line-height: 22px;
+    background-color: #2E6DA4;
+    border-radius: 6px;
+  }
+  .masker {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    z-index: 1;
+  }
+}
